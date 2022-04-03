@@ -2,128 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="./assets/css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
     <title>Weather Dashboard</title>
   </head>
-
   <body>
-    
-  <header>
-    <h1>WEATHER DASHBOARD</h1>
-  </header>
+    <header class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <h1 class="card-title">Weather Dashboard</h1>
 
-  <section>
-    <div>
-      <h3>Search for a City:</h3>
-      <form>
-        <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
-        <br>
-        <button type="submit" class="btn">Search</button>
-      </form>
-    </section>
-
-    <div>
-      <h3>Recently Visited Cities: <span></span></h3>
-      <div>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-
-  <div class="card">
-    <div>
-      <h3>Currently Displayed City</h3>
-      <h3>Current Date</h3>
-      <span>icon</span>
-    </div>
-    <ol>
-      <li>Temp</li>
-      <li>Wind</li>
-      <li>Humidity</li>
-      <li>UV Index</li><span>UV Icon</span>
-    </ol>
-  </div>
-
-  <div>
-    <h4>5-Day Forecast</h4>
-      <div class="forecast-card">
-        <div>
-          <h4>Current Date</h4>
-          <span>icon</span>
+              <p class="card-text">
+                Search a city to see what the weather's like!
+              </p>
+            </div>
+          </div>
         </div>
-          <ol>
-              <li>Temp</li>
-              <li>Wind</li>
-              <li>Humidity</li>
-          </ol>
       </div>
+    </header>
 
-      <div class="forecast-card">
-        <div>
-          <h4>Current Date</h4>
-          <span>icon</span>
+    <main class="flex-row justify-sapce-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search for a City</h3>
+          <form id="user-form" class="card-body">
+            <label class="form-label" for="city">City</label>
+            <input
+              name="city"
+              id="city"
+              type="text"
+              autofocus="true"
+              class="form-input"
+            />
+            <button type="submit" class="btn">Search</button>
+          </form>
         </div>
-          <ol>
-              <li>Temp</li>
-              <li>Wind</li>
-              <li>Humidity</li>
-          </ol>
       </div>
 
-      <div class="forecast-card">
-        <div>
-          <h4>Current Date</h4>
-          <span>icon</span>
-        </div>
-          <ol>
-              <li>Temp</li>
-              <li>Wind</li>
-              <li>Humidity</li>
-          </ol>
-      </div>
+      <div id="history" class="container"></div>
 
-      <div class="forecast-card">
-        <div>
-          <h4>Current Date</h4>
-          <span>icon</span>
-        </div>
-          <ol>
-              <li>Temp</li>
-              <li>Wind</li>
-              <li>Humidity</li>
-          </ol>
-      </div>
+      <div id="current" class="container"></div>
 
-      <div class="forecast-card">
-        <div>
-          <h4>Current Date</h4>
-          <span>icon</span>
-        </div>
-          <ol>
-              <li>Temp</li>
-              <li>Wind</li>
-              <li>Humidity</li>
-          </ol>
-      </div>
-  </div>
+      <div id="five-day" class="container"></div>
+    </main>
 
-
-  <footer>
-    <h3>by Vik Maharaj</h3>
-  </footer>
-
-
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
