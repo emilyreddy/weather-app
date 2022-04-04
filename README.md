@@ -31,7 +31,7 @@ any trip according to the weather of the city . The Application provides 05 days
 - WHEN I open the weather dashboard
 --> THEN I am presented with the last searched city forecast
 
-## Technologie
+## Technology
 - Interface AND DESIGN : html ,Css, Bootstrap
 - Interaction : JavaScipt
 - Library and UI :JQuery, Moment.js
