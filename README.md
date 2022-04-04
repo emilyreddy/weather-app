@@ -10,7 +10,7 @@ SO THAT I can plan a trip accordingly
 
 - [Description](#description)
 - [Usage](#usage)
-- [Technologie](#technologie
+- [Technology](#technology)
 
 ## Description
 weather dashboard is an application that will run in the browser and feature dynamically updated HTML and CSS.
